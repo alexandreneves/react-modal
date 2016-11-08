@@ -39,8 +39,7 @@ var ModalWrapper = function (_React$Component) {
         _classCallCheck(this, ModalWrapper);
 
         // pre-binding
-
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ModalWrapper).call(this, props));
+        var _this = _possibleConstructorReturn(this, (ModalWrapper.__proto__ || Object.getPrototypeOf(ModalWrapper)).call(this, props));
 
         _this._handleClick = _this._handleClick.bind(_this);
         _this._handleKeyDown = _this._handleKeyDown.bind(_this);

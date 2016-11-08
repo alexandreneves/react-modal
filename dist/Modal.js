@@ -28,7 +28,7 @@ var ModalCore = function (_React$Component) {
     function ModalCore(props) {
         _classCallCheck(this, ModalCore);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ModalCore).call(this, props));
+        var _this = _possibleConstructorReturn(this, (ModalCore.__proto__ || Object.getPrototypeOf(ModalCore)).call(this, props));
 
         _this.body = document.querySelector('body');
         _this.mutation = null;
@@ -91,7 +91,7 @@ var ModalCore = function (_React$Component) {
                     _react2.default.createElement(
                         'i',
                         { className: 'modal__close', 'data-modal': 'close', 'aria-label': 'close' },
-                        '×'
+                        '\xD7'
                     )
                 )
             );
@@ -161,7 +161,7 @@ var ModalCore = function (_React$Component) {
         value: function _scrollPositionSave() {
             // console.info('modal - _scrollPositionSave');
             this.body.setAttribute('data-modalBodyScrollPosition', window.pageYOffset);
-            this.body.style.position = 'relative';
+            // this.body.style.position = 'relative';
             this.body.style.top = -window.pageYOffset;
         }
     }, {
