@@ -1,7 +1,7 @@
 {
   "name": "react-modal-example",
   "version": "0.1.0",
-  "homepage": "https://github.com/alexandreneves/react-modal",
+  "homepage": "https://alexandreneves.github.io/react-modal",
   "devDependencies": {
     "react-scripts": "0.7.0",
     "lodash": "^4.16.6"
