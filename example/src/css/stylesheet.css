@@ -1,13 +1,15 @@
-@import url("./normalize.css");
-@import url("./skeleton.css");
-@import url("../../dist/modal.css");
+@import '~normalize.css/normalize.css';
+@import '~milligram/dist/milligram.min.css';
+@import '~../modal/modal.css';
 
-/* skeleton resets */
+/* resets */
 
 html { font-size: 100%; }
 body { font-size: 1rem; }
-h1 { font-size: 3.5rem; }
-h1 { margin: 0; }
+h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0 0 0;
+}
 h2 { font-size: 2.5rem; }
 h3 { font-size: 2.5rem; }
 
@@ -26,11 +28,10 @@ body > img {
 
 a {
     display: block;
-    text-decoration: none;
 }
 
 p {
-    margin-bottom: 1.2rem;
+    margin: 0;
 }
 
 .examples {
@@ -39,8 +40,6 @@ p {
 
 button {
     margin: 0;
-    padding: 0 1rem;
-    background: white;
 }
 
 /* modal */

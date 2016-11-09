@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 import {modalToggle} from '../actions';
 import _ from 'lodash';
 
-import ModalWrapper from '../../../src/ModalWrapper';
+import ModalWrapper from '../modal/ModalWrapper';
 
 const mapStateToProps = (state, ownProp) => {
     if (state.modalToggle.id === ownProp.id) {

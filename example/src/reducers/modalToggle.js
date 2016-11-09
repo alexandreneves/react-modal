@@ -1,4 +1,4 @@
-import { FLYOUT_TOGGLE } from '../constants/ActionTypes'
+import { MODAL_TOGGLE } from '../constants/ActionTypes'
 
 const initialState = {
     id: null,
@@ -7,7 +7,7 @@ const initialState = {
 
 const modalToggle = (state = initialState, action) => {
     switch (action.type) {
-    case 'MODAL_TOGGLE':
+    case MODAL_TOGGLE:
         // console.info('reducer modalToggle:', state, action);
         let s;
 
