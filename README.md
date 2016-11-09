@@ -18,15 +18,14 @@ MODAL React Component
 
 ## EXAMPLE
 
-[Checkout the example](https://alexandreneves.github.io/react-modal) (Redux).
-If requested I can provide an Alt example.
+[Example (redux)](https://alexandreneves.github.io/react-modal), if requested I can provide an Alt example.
 
 
 
 ## INSTALLATION
 
 ```sh
-$ npm i @aneves/react-modal
+$ npm install --save @aneves/react-modal
 ```
 
 
@@ -45,9 +44,7 @@ react-modal was developed alongside react-flyout so it shares most of its struct
 + **modal.css**
     + CSS
 
-### Why not dumb?
-
-The problem with these kind of componentes (dropdowns, modals, ...) is the need to handle window/body clicks in order to close. Why is this a problem? The lack of state (in this case) and the immutability of the props make it "impossible" to close itself.
+The problem with these kind of componentes (dropdowns, modals, ...) is the need to handle window/body clicks in order to close. Why is this a problem? The lack of state and the immutability of the props make it "impossible" to close itself.
 
 That's why I provide the **ModalWrapper** which adds and removes the window click eventListener when needed and accepts a method through the props that gets executed by the handler. This method can in turn close the flyout by updating the props sent to the wrapper.
 
