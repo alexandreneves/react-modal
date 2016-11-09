@@ -41,7 +41,7 @@ $font_size: 0.9rem;
         cursor: default; // modal--close-on-backdrop
 
         .modal__header {
-            padding: 0 2rem 2.5rem 0;
+            padding-bottom: 1.5rem;
 
             .modal__title {
                 margin: 0;
@@ -60,7 +60,7 @@ $font_size: 0.9rem;
     .modal__close {
         position: absolute;
         top: -2px;
-        right: 2px;
+        right: 8px;
 
         color: white;
         line-height: 1;
@@ -85,6 +85,10 @@ $font_size: 0.9rem;
         .modal__wrapper {
             width: 100% !important;
             min-height: 100%;
+
+            .modal__header {
+                padding-right: 2rem;
+            }
         }
 
         .modal__close {

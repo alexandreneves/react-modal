@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -85,7 +83,7 @@ class ModalCore extends React.Component {
         let windowHeight = window.innerHeight;
         let modal = document.querySelector('.modal');
         let modalWrapper = document.querySelector('.modal .modal__wrapper');
-        let modalHeight = parseInt(modalWrapper.offsetHeight);
+        let modalHeight = parseInt(modalWrapper.offsetHeight, 10);
         let offset = 100;
 
         if (windowHeight - offset < modalHeight) {
